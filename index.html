@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velora CRM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="stylesheet.css" />
+  <!-- npm install @fortawesome/fontawesome-free -->
+</head>
+
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo-card">
+        <div class="logo">Velora</div>
+      </div>
+      <!-- Profile Card -->
+      <div class="profile-card">
+        <img src="assets/lily.jpg" alt="Profile photo" />
+        <h2>Lily De La Rosa</h2>
+        <p>Sales Manager</p>
+        <span class="status"><span class="status-dot"></span>Available</span>
+      </div>
+
+      <nav class="nav">
+        <!-- In modern WD, we use i tags normally used to italicize for icons -->
+        <a href="#" class="active"><i class="fa-solid fa-house"></i>Dashboard</a>
+        <a href="#"><i class="fa-regular fa-user"></i>Clients</a>
+        <a href="#"><i class="fa-solid fa-chart-column"></i>Analytics</a>
+        <a href="#"><i class="fa-regular fa-briefcase"></i>Deals</a>
+        <a href="#"><i class="fa-regular fa-calendar"></i>Calendar</a>
+        <a href="#"><i class="fa-regular fa-message"></i>Messages</a>
+        <a href="#"><i class="fa-regular fa-square-check"></i>Tasks <span class="badge">3</span></a>
+        <a href="#"><i class="fa-solid fa-gear"></i>Settings <span class="badge orange">7</span></a>
+      </nav>
+    </aside>
+    <!-- Left side(TOP CODE), Right side(BOTTOM CODE)-->
+    <main class="main-content">
+      <!-- Now lets work on the header portion on the main dashoard -->
+      <header class="topbar">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search clients, deals, tasks...">
+        </div>
+
+        <div class="top-actions">
+          <button class="icon-btn">
+            <i class="fa-regular fa-bell"></i>
+            <span class="notification">5</span>
+          </button>
+          <button class="icon-btn"><i class="fa-regular fa-envelope"></i></button>
+          <button class="add-btn"><i class="fa-solid fa-plus"></i>Add New</button>
+        </div>
+      </header>
+      <!-- This will be the section for the greetings -->
+      <section class="hero">
+        <h1>Welcome back, Lily!</h1>
+        <p>Here's what's happening with your usiness today.</p>
+      </section>
+      <!-- This is the starting point for dashboard results/view -->
+<!-- I'm going to div tag first to better understand where and what goes where -->
+      <section class="stats">
+        <div class="stat-card">
+          <div>
+            <h4>Total Revenue</h4>
+            <h2>$248,750</h2>
+          </div>
+
+          <p class="stat-icon green">
+            <i class="fa-solid fa-dollar-sign"></i>
+          </p>
+        </div>
+
+        <div class="stat-card">
+          <div>
+            <h4>New Clients</h4>
+            <h2>32</h2>
+            <p class="growth"> ↑ 14.5% vs last month</p>
+          </div>
+          <div class="stat-icon purple"><i class="fa-solid fa-user-plus"></i></div>
+        </div>
+
+        <div class="stat-card">
+          <div>
+            <h4>Closed Deals</h4>
+            <h2>18</h2>
+            <p class="growth"> ↑ 12.3% vs last month </p>
+          </div>
+          <div class="stat-icon blue"><i class="fa-solid fa-bag-shopping"></i></div>
+        </div>
+
+        <div class="stat-card">
+          <div>
+            <h4>Tasks Completed</h4>
+            <h2>76%</h2>
+            <p> ↑ 8.6% vs last month </p>
+          </div>
+          <div class="stat-icon peach"><i class="fa-solid fa-check"></i></div>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">     
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Revenue Overview</h3>
+            <button class="select">This Year</button>
+          </div>
+
+          <div class="legend">
+            <span><span class="dot" style="background:#0b8278"></span>Revenue</span>
+            <span><span class="dot" style="background:#ff5266"></span>Expenses</span>
+          </div>
+
+          <div class="chart">
+            <div class="line revenue"></div>
+            <div class="line expense"></div>
+            <div class="months">
+              <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Upcoming Activities</h3>
+          </div>
+
+          <div class="activity">
+            <div class="activity-icon green"><i class="fa-regular fa-calendar"></i></div>
+            <div class="activity-info">
+              <h4>Client Meeting</h4>
+              <p>Acme Corporation</p>
+            </div>
+            <time>10:00 AM</time>
+          </div>
+
+          <div class="activity">
+            <div class="activity-icon peach"><i class="fa-solid fa-clipboard-list"></i></div>
+            <div class="activity-info">
+              <h4>Proposal Presentation</h4>
+              <p>Tech Solutions Inc.</p>
+            </div>
+            <time>1:30 PM</time>
+          </div>
+
+          <div class="activity">
+            <div class="activity-icon purple"><i class="fa-solid fa-phone"></i></div>
+            <div class="activity-info">
+              <h4>Follow-up Call</h4>
+              <p>Global Enterprises</p>
+            </div>
+            <time>3:00 PM</time>
+          </div>
+
+          <br>
+          <a href="#" class="link">View Calendar →</a>
+        </div>      
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="panel">
+          <div class="panel-header">
+          <h3>Recent Deals</h3>
+          <a href="#" class="link">View All →</a>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Deal Name</th>
+              <th>Client</th>
+              <th>Value</th>
+              <th>Stage</th>
+              <th>Close Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Enterprise Software Deal</td>
+              <td>Acme Corporation</td>
+              <td>$45,000</td>
+              <td><span class="pill proposal">Proposal</span></td>
+              <td>Jul 25, 2026</td>
+            </tr>
+            <tr>
+              <td>Marketing Campaign</td>
+              <td>Tech Solutions Inc.</td>
+              <td>$32,000</td>
+              <td><span class="pill negotiation">Negotiation</span></td>
+              <td>Jul 28, 2026</td>
+            </tr>
+            <tr>
+              <td>Consulting Services</td>
+              <td>Global Enterprises</td>
+              <td>$28,500</td>
+              <td><span class="pill qualification">Qualification</span></td>
+              <td>Aug 5, 2026</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Top Clients</h3>
+            <a href="#" class="link">View All →</a>
+          </div>
+
+          <div class="clients-list">
+            <div class="client">
+              <div class="client-left">
+                <div class="avatar a">A</div>
+                <span>Acme Corporation</span>
+              </div>
+              <strong>$95,250</strong>
+            </div>
+
+            <div class="client">
+              <div class="client-left">
+                <div class="avatar b">T</div>
+                <span>Tech Solution Inc.</span>
+              </div>
+              <strong>$75,800</strong>
+            </div>
+
+            <div class="client">
+              <div class="client-left">
+                <div class="avatar c">G</div>
+                <span>Global Enterprises</span>
+              </div>
+              <strong>$45,600</strong>
+            </div>
+
+            <div class="client">
+              <div class="client-left">
+                <div class="avatar d">F</div>
+                <span>Future Systems</span>
+              </div>
+              <strong>$32,100</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Fill Script -->
+  <script>
+    const navLinks = document.querySelectorAll(".nav a");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", function(){
+        navLinks.forEach(item => item.classList.remove("active"));
+        this.classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
