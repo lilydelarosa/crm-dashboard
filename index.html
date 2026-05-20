@@ -60,7 +60,7 @@
         <p>Here's what's happening with your usiness today.</p>
       </section>
       <!-- This is the starting point for dashboard results/view -->
-<!-- I'm going to div tag first to better understand where and what goes where -->
+      <!-- I'm going to div tag first to better understand where and what goes where -->
       <section class="stats">
         <div class="stat-card">
           <div>
@@ -101,7 +101,7 @@
         </div>
       </section>
 
-      <section class="dashboard-grid">     
+      <section class="dashboard-grid">
         <div class="panel">
           <div class="panel-header">
             <h3>Revenue Overview</h3>
@@ -156,50 +156,50 @@
 
           <br>
           <a href="#" class="link">View Calendar →</a>
-        </div>      
+        </div>
       </section>
 
       <section class="dashboard-grid">
         <div class="panel">
           <div class="panel-header">
-          <h3>Recent Deals</h3>
-          <a href="#" class="link">View All →</a>
-        </div>
+            <h3>Recent Deals</h3>
+            <a href="#" class="link">View All →</a>
+          </div>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Deal Name</th>
-              <th>Client</th>
-              <th>Value</th>
-              <th>Stage</th>
-              <th>Close Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Enterprise Software Deal</td>
-              <td>Acme Corporation</td>
-              <td>$45,000</td>
-              <td><span class="pill proposal">Proposal</span></td>
-              <td>Jul 25, 2026</td>
-            </tr>
-            <tr>
-              <td>Marketing Campaign</td>
-              <td>Tech Solutions Inc.</td>
-              <td>$32,000</td>
-              <td><span class="pill negotiation">Negotiation</span></td>
-              <td>Jul 28, 2026</td>
-            </tr>
-            <tr>
-              <td>Consulting Services</td>
-              <td>Global Enterprises</td>
-              <td>$28,500</td>
-              <td><span class="pill qualification">Qualification</span></td>
-              <td>Aug 5, 2026</td>
-            </tr>
-          </tbody>
-        </table>
+          <table>
+            <thead>
+              <tr>
+                <th>Deal Name</th>
+                <th>Client</th>
+                <th>Value</th>
+                <th>Stage</th>
+                <th>Close Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Enterprise Software Deal</td>
+                <td>Acme Corporation</td>
+                <td>$45,000</td>
+                <td><span class="pill proposal">Proposal</span></td>
+                <td>Jul 25, 2026</td>
+              </tr>
+              <tr>
+                <td>Marketing Campaign</td>
+                <td>Tech Solutions Inc.</td>
+                <td>$32,000</td>
+                <td><span class="pill negotiation">Negotiation</span></td>
+                <td>Jul 28, 2026</td>
+              </tr>
+              <tr>
+                <td>Consulting Services</td>
+                <td>Global Enterprises</td>
+                <td>$28,500</td>
+                <td><span class="pill qualification">Qualification</span></td>
+                <td>Aug 5, 2026</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div class="panel">
@@ -251,11 +251,12 @@
     const navLinks = document.querySelectorAll(".nav a");
 
     navLinks.forEach(link => {
-      link.addEventListener("click", function(){
+      link.addEventListener("click", function () {
         navLinks.forEach(item => item.classList.remove("active"));
         this.classList.add("active");
       });
     });
   </script>
 </body>
+
 </html>
