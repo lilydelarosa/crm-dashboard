@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Velora CRM</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="css/stylesheet.css" />
   <!-- npm install @fortawesome/fontawesome-free -->
 </head>
 
@@ -56,8 +57,8 @@
       </header>
       <!-- This will be the section for the greetings -->
       <section class="hero">
-        <h1>Welcome back, Lily!</h1>
-        <p>Here's what's happening with your usiness today.</p>
+        <h1>Welcome back, Lily! 👋</h1>
+        <p>Here's a quick overview of your sales performance, clients, and upcoming activities today.</p>
       </section>
       <!-- This is the starting point for dashboard results/view -->
       <!-- I'm going to div tag first to better understand where and what goes where -->
@@ -103,6 +104,7 @@
 
       <section class="dashboard-grid">
         <div class="panel">
+          
           <div class="panel-header">
             <h3>Revenue Overview</h3>
             <button class="select">This Year</button>
@@ -113,14 +115,14 @@
             <span><span class="dot" style="background:#ff5266"></span>Expenses</span>
           </div>
 
-          <div class="chart">
-            <div class="line revenue"></div>
-            <div class="line expense"></div>
-            <div class="months">
-              <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span>
-            </div>
+          <div class="chart-container">
+            <canvas id="revenueChart"></canvas>
           </div>
+
         </div>
+
+
+        
 
         <div class="panel">
           <div class="panel-header">
@@ -246,17 +248,10 @@
     </main>
   </div>
 
-  <!-- Fill Script -->
-  <script>
-    const navLinks = document.querySelectorAll(".nav a");
+<footer class="footer">
+  <p>© 2026 Velora CRM. Designed & developed by Lily De La Rosa.</p>
+</footer>
 
-    navLinks.forEach(link => {
-      link.addEventListener("click", function () {
-        navLinks.forEach(item => item.classList.remove("active"));
-        this.classList.add("active");
-      });
-    });
-  </script>
+<script src="js/app.js"></script>
 </body>
-
 </html>
