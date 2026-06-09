@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   font-family: "Inter", "Segoe UI", sans-serif;
   background: 
@@ -13,25 +19,27 @@ body {
 
 .app {
   display: grid;
-  grid-template-columns: 270px 1fr;
-  min-height: 100vh;
+  grid-template-columns: 260px 1fr;
+  height: 100vh;
 }
 
 .sidebar {
+  height: 100vh;
+  overflow-y: sticky;
   background: #eef5f4;
-  padding: 24px 14px;
+  padding: 16px 12px;
   border-right: 1px solid #dfe8e7;
   box-shadow: 8px 0 30px rgba(34, 70, 70, 0.08);
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 12px;
 }
 
 .logo-card,
 .profile-card {
   background: white;
-  border-radius: 18px;
-  padding: 22px;
+  border-radius: 16px;
+  padding: 5px;
   text-align: center;
   box-shadow: 0 8px 25px rgba(40, 80, 80, 0.08);
 }
@@ -39,34 +47,36 @@ body {
 .logo {
   font-family: Georgia, serif;
   color: #5faaa0;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
 }
 
 .profile-card img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 18px;
   border: 4px solid #2f6f68;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
+  margin-top: 8px;
 }
 
 .profile-card h2 {
   font-family: Georgia, serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .profile-card p {
   color: #7d9290;
-  margin-top: 6px;
+  font-size: 14px;
+  margin-top: 4px;
 }
 
 .status {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 10px;
+  margin-top: 7px;
   font-size: 13px;
   color: #48615f;
 }
@@ -90,12 +100,13 @@ body {
 .nav a {
   text-decoration: none;
   color: #2d4241;
-  padding: 14px 16px;
+  padding: 8px 12px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   gap: 14px;
   font-weight: 500;
+  font-size: 14px;
   transition: 0.25s ease;
 }
 
@@ -105,6 +116,21 @@ body {
   color: #0b8278;
   transform: translateX(6px);
   box-shadow: 0 4px 12px rgba(11, 130, 120, 0.08);
+}
+
+.nav .logout-link {
+  margin-top: 10px;
+  padding-top: 18px;
+  color: #2d4241;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.nav .logout-link:hover {
+  background: #f6e6e6;
+  color: #b23b3b;
 }
 
 .badge {
@@ -121,7 +147,9 @@ body {
 }
 
 .main-content {
-  padding: 24px 14px;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 24px;
 }
 
 .topbar {

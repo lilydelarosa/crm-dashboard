@@ -6,6 +6,9 @@ navLinks.forEach(link => {
     this.classList.add("active");
   });
 });
+/*
+When I click a sidebar link, remove the active style from all links, then add the active style to the one I clicked.
+ */
 
 
 const ctx = document.getElementById("revenueChart");
