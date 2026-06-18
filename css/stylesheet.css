@@ -28,7 +28,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   background: #eef5f4;
-  padding: 10px 12px;
+  padding: 16px 12px 10px;
   border-right: 1px solid #dfe8e7;
   box-shadow: 8px 0 30px rgba(34, 70, 70, 0.08);
   display: flex;
@@ -275,7 +275,8 @@ body {
 }
 
 .search {
-  width: 440px;
+  max-width: 560;
+  flex: 1;
   background: white;
   border: 1px solid #e2e8e8;
   padding: 13px 18px;
