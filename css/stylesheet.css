@@ -172,30 +172,6 @@ body {
   margin: 0;
 }
 
-.status {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-
-  margin-top: 4px;
-  font-size: 11px;
-  font-weight: 600;
-  color: #2d615b;
-
-  background: transparent;
-  padding: 0;
-  border: none;
-  box-shadow: none;
-}
-
-.status-dot {
-  width: 9px;
-  height: 9px;
-  background: #2E9B57;
-  border-radius: 50%;
-  box-shadow: 0 0 8px rgba(46, 155, 87, 0.75);
-}
-
 .nav {
   display: flex;
   flex-direction: column;
