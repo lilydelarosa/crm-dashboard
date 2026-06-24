@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- REC: Clicking on photo to minimize -->
+<!-- REC: Clicking on photo to minimize or maybe just make a smaller card -->
 <!-- LOGO Card needs to be updated and smaller -->
 <!-- Maybe a longer search bar? -->
 
@@ -23,14 +23,14 @@
 
       <nav class="nav">
         <!-- In modern WD, we use i tags normally used to italicize for icons -->
-        <a href="#" class="active"><i class="fa-solid fa-house"></i>Dashboard</a>
-        <a href="#"><i class="fa-regular fa-user"></i>Clients</a>
-        <a href="#"><i class="fa-solid fa-chart-column"></i>Analytics</a>
-        <a href="#"><i class="fa-regular fa-briefcase"></i>Deals</a>
-        <a href="#"><i class="fa-regular fa-calendar"></i>Calendar</a>
-        <a href="#"><i class="fa-regular fa-message"></i>Messages</a>
-        <a href="#"><i class="fa-regular fa-square-check"></i>Tasks <span class="badge">3</span></a>
-        <a href="#"><i class="fa-solid fa-gear"></i>Settings <span class="badge orange">7</span></a>
+        <a href="#dashboard" class="active"><i class="fa-solid fa-house"></i>Dashboard</a>
+        <a href="#clients"><i class="fa-regular fa-user"></i>Clients</a>
+        <a href="#analytics"><i class="fa-solid fa-chart-column"></i>Analytics</a>
+        <a href="#deals"><i class="fa-regular fa-briefcase"></i>Deals</a>
+        <a href="#calendar"><i class="fa-regular fa-calendar"></i>Calendar</a>
+        <a href="#messages"><i class="fa-regular fa-message"></i>Messages</a>
+        <a href="#tasks"><i class="fa-regular fa-square-check"></i>Tasks <span class="badge">3</span></a>
+        <a href="#settings"><i class="fa-solid fa-gear"></i>Settings <span class="badge orange">7</span></a>
         <a href="#" class="logout-link"><i class="fa-solid fa-right-from-bracket"></i>
           <span>Log out</span>
         </a>
@@ -64,7 +64,7 @@
         </div>
       </header>
       <!-- This will be the section for the greetings -->
-      <section class="hero">
+      <section id="dashboard" class="hero">
         <h1>Welcome back, Lily! 👋</h1>
         <p>Here's a quick overview of your sales performance, clients, and upcoming activities today.</p>
       </section>
@@ -129,7 +129,7 @@
           </div>
         </div>
 
-        <div class="panel">
+        <div id="calendar" class="panel">
           <div class="panel-header">
             <h3>Upcoming Activities</h3>
           </div>
@@ -162,15 +162,15 @@
           </div>
 
           <br>
-          <a href="calendar" class="link">View Calendar →</a>
+          <a href="#calendar" class="link">View Calendar →</a>
         </div>
       </section>
 
       <section class="dashboard-grid">
-        <div class="panel">
+        <div id="deals" class="panel">
           <div class="panel-header">
             <h3>Recent Deals</h3>
-            <a href="deals" class="link">View All →</a>
+            <a href="#deals" class="link">View All →</a>
           </div>
 
           <table>
@@ -209,10 +209,10 @@
           </table>
         </div>
 
-        <div class="panel">
+        <div id="clients" class="panel">
           <div class="panel-header">
             <h3>Top Clients</h3>
-            <a href="clients" class="link">View All →</a>
+            <a href="#clients" class="link">View All →</a>
           </div>
 
           <div class="clients-list">
@@ -250,6 +250,43 @@
           </div>
         </div>
       </section>
+
+      <section id="analytics" class="dashboard-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Analytics</h3>
+          </div>
+          <p>Analytics insights and performance breakdowns will go here.</p>
+        </div>
+      </section>
+
+      <section id="messages" class="dashboard-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Messages</h3>
+          </div>
+          <p>Client messages and inbox updates will go here.</p>
+        </div>
+      </section>
+
+      <section id="tasks" class="dashboard-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Tasks</h3>
+          </div>
+          <p>Task list and follow-up reminders will go here.</p>
+        </div>
+      </section>
+
+      <section id="settings" class="dashboard-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Settings</h3>
+          </div>
+          <p>Account and dashboard settings will go here.</p>
+        </div>
+      </section>  
+
     </main>
   </div>
 
