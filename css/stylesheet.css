@@ -467,16 +467,6 @@ body {
   border-radius: 50%;
   margin-right: 6px;
 }
-/*
-.chart {
-  height: 210px;
-  background:
-    linear-gradient(to top, #e8eeee 1px, transparent 1px) 0 0 / 100% 42px,
-    linear-gradient(to right, transparent, transparent);
-  position: relative;
-  padding: 20px;
-}
-*/
 
 .chart-container {
   position: relative;
@@ -548,6 +538,31 @@ canvas {
   margin-left: auto;
   color: #536866;
   font-size: 13px;
+}
+
+.analytics-preview { 
+  display: grid;
+  grid-template-column: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.analytics-preview div {
+  background: #f8fbfb;
+  border: 1px solid #e5eee;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.analytics-preview span {
+  display: block;
+  color: #6a7d7b;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.analytics-preview strong {
+  color: #0b8278;
+  font-size: 22px;
 }
 
 .link {
