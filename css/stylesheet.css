@@ -12,7 +12,7 @@ body {
 
 body {
   font-family: "Inter", "Segoe UI", sans-serif;
-  background: 
+  background:
     linear-gradient(to bottom right, #f4f7f7, #eef4f3);
   color: #1f2f2f;
 }
@@ -55,6 +55,7 @@ body {
   object-fit: contain;
   display: block;
 }
+
 /* 
 .logo-card,
 .profile-card {
@@ -319,10 +320,10 @@ body {
   box-shadow: 0 8px 18px rgba(11, 130, 120, 0.25);
 }
 
-.add-btn, 
+.add-btn,
 .icon-btn,
 .select {
-  transition: 
+  transition:
     transform 0.2s ease,
     box-shadow 0.2 ease,
 }
@@ -351,7 +352,10 @@ body {
   margin-bottom: 6px;
 }
 
-.stat-card, .panel, .client, .activity {
+.stat-card,
+.panel,
+.client,
+.activity {
   cursor: pointer;
 }
 
@@ -370,13 +374,15 @@ body {
   align-items: center;
 }
 
-.stat-card, .panel {
+.stat-card,
+.panel {
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
 }
 
-.stat-card:hover, .panel:hover {
+.stat-card:hover,
+.panel:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 30px rgba(44, 72, 72, 0.12);
 }
@@ -540,29 +546,43 @@ canvas {
   font-size: 13px;
 }
 
-.analytics-preview { 
+.analytics-preview {
   display: grid;
-  grid-template-column: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
 
-.analytics-preview div {
+.analytics-mini-card {
   background: #f8fbfb;
-  border: 1px solid #e5eee;
+  border: 1px solid #e5eeee;
   border-radius: 14px;
   padding: 16px;
+  min-height: 145px;
 }
 
-.analytics-preview span {
+.analytics-mini-card .activity-icon {
+  margin-bottom: 14px;
+}
+
+.analytics-mini-card span {
   display: block;
   color: #6a7d7b;
   font-size: 13px;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 
-.analytics-preview strong {
-  color: #0b8278;
+.analytics-mini-card strong {
+  display: block;
+  color: #102927;
   font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.analytics-mini-card p {
+  color: #5f706e;
+  font-size: 12px;
+  line-height: 1.35;
 }
 
 .link {
@@ -662,7 +682,7 @@ td {
   padding: 20px;
   color: #7a8c8a;
   font-size: 13px;
-} 
+}
 
 @media (max-width: 1100px) {
   .app {
@@ -688,4 +708,3 @@ td {
     gap: 18px;
   }
 }
-
