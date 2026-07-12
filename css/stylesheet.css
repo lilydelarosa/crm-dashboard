@@ -435,7 +435,7 @@ body {
 .dashboard-grid {
   display: grid;
   grid-template-columns: 2fr 1.1fr;
-  gap: 22px;
+  gap: 9px;
   margin-top: 10px;
   margin-bottom: 6px;
 }
@@ -444,7 +444,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .panel-header h3 {
@@ -519,8 +519,8 @@ canvas {
 .activity {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 14px 0;
+  gap: 12px;
+  padding: 8px 0;
 }
 
 .activity-icon {
@@ -556,8 +556,8 @@ canvas {
   background: #f8fbfb;
   border: 1px solid #e5eeee;
   border-radius: 14px;
-  padding: 16px;
-  min-height: 145px;
+  padding: 10px;
+  min-height: 105px;
 }
 
 .analytics-mini-card .activity-icon {
