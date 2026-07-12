@@ -333,81 +333,104 @@
           </div>
         </div>
       </section>
-      <!-- 
-      <section id="analytics" class="dashboard-grid">
-        <div class="panel">
-          <div class="panel-header">
-            <h3>Analytics</h3>
-            <span class="panel-subtitle">Real-time performance tracking and trends</span>
-          </div>
 
-          <div class="analytics-grid">
-            <div class="analytics-card">
-              <h4>Monthly Revenue</h4>
-              <strong>$128,400</strong>
-              <p>+18.2% vs last month</p>
-            </div>
-            <div class="analytics-card">
-              <h4>Lead Conversion</h4>
-              <strong>42.7%</strong>
-              <p>Highest conversion in 6 months</p>
-            </div>
-            <div class="analytics-card">
-              <h4>Customer Retention</h4>
-              <strong>91%</strong>
-              <p>Steady growth from Q1</p>
-            </div>
-            <div class="analytics-card">
-              <h4>Pipeline Value</h4>
-              <strong>$245,900</strong>
-              <p>Forecast for next quarter</p>
-            </div>
-          </div>
-
-          <div class="analytics-details">
-            <div class="chart-card">
-              <div class="chart-header">
-                <h4>Sales Performance</h4>
-                <span>Weekly revenue breakdown</span>
-              </div>
-              <div class="chart-placeholder">Line chart showing sales trends</div>
-            </div>
-            <div class="analytics-sidebar">
-              <div class="sidebar-metric">
-                <h5>Top Product</h5>
-                <p>Enterprise CRM Suite</p>
-                <strong>37% of revenue</strong>
-              </div>
-              <div class="sidebar-metric">
-                <h5>Best Channel</h5>
-                <p>Email campaigns</p>
-                <strong>24 new deals</strong>
-              </div>
-              <div class="sidebar-metric">
-                <h5>Growth Opportunity</h5>
-                <p>Upsell packages</p>
-                <strong>+$58,000 potential</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
--->
-      <section id="tasks" class="dashboard-grid">
-        <div class="panel">
+      <!-- Tasks + Settings Overview -->
+      <!-- Tasks + Settings Overview -->
+      <section class="dashboard-grid">
+        <div id="tasks" class="panel">
           <div class="panel-header">
             <h3>Tasks</h3>
+            <a href="tasks.html" class="link">View All →</a>
           </div>
-          <p>Task list and follow-up reminders will go here.</p>
-        </div>
-      </section>
 
-      <section id="settings" class="dashboard-grid">
-        <div class="panel">
+          <div class="task-list">
+            <div class="task-item">
+              <div class="task-left">
+                <div class="task-check completed">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+
+                <div>
+                  <h4>Send follow-up email</h4>
+                  <p>Acme Corporation</p>
+                </div>
+              </div>
+
+              <span class="task-status completed">Done</span>
+            </div>
+
+            <div class="task-item">
+              <div class="task-left">
+                <div class="task-check pending">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+
+                <div>
+                  <h4>Prepare proposal deck</h4>
+                  <p>Tech Solutions Inc.</p>
+                </div>
+              </div>
+
+              <span class="task-status pending">Today</span>
+            </div>
+
+            <div class="task-item">
+              <div class="task-left">
+                <div class="task-check upcoming">
+                  <i class="fa-regular fa-calendar"></i>
+                </div>
+
+                <div>
+                  <h4>Review pipeline updates</h4>
+                  <p>Global Enterprises</p>
+                </div>
+              </div>
+
+              <span class="task-status upcoming">Tomorrow</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="settings" class="panel">
           <div class="panel-header">
             <h3>Settings</h3>
+            <a href="settings.html" class="link">Manage →</a>
           </div>
-          <p>Account and dashboard settings will go here.</p>
+
+          <div class="settings-list">
+            <div class="settings-item">
+              <div class="activity-icon green">
+                <i class="fa-solid fa-user-gear"></i>
+              </div>
+
+              <div>
+                <h4>Profile Settings</h4>
+                <p>Update name, role, and photo</p>
+              </div>
+            </div>
+
+            <div class="settings-item">
+              <div class="activity-icon purple">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+
+              <div>
+                <h4>Notifications</h4>
+                <p>5 unread alerts</p>
+              </div>
+            </div>
+
+            <div class="settings-item">
+              <div class="activity-icon peach">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+
+              <div>
+                <h4>Security</h4>
+                <p>Password and access controls</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
